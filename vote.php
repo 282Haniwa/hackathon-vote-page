@@ -9,6 +9,11 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/vote/main.js"></script>
 </head>
 <body>
   <nav class="deep-orange" role="navigation">
@@ -26,15 +31,15 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <h1 class="header center orange-text">好きな動物は？</h1>
+      <h2 id="question" class="header center orange-text"></h1>
       <div class="row center">
         <h5 class="header col s12 light">この中から1つ選んで投票してください</h5>
       </div>
-      <div class="row left" style="width:100%">        
-        <a href="vote_answer.html" id="download-button" class="btn-large waves-effect waves-light orange" style="width:100%">犬</a><br><br>
+      <div id="button-container" class="row left" style="width:100%">        
+        <!-- <a href="api/vote.php" id="download-button" class="btn-large waves-effect waves-light orange" style="width:100%">犬</a><br><br>
         <a href="vote_answer.html" id="download-button" class="btn-large waves-effect waves-light orange" style="width:100%">猫</a><br><br>
         <a href="vote_answer.html" id="download-button" class="btn-large waves-effect waves-light orange" style="width:100%">鳥</a><br><br>
-        <a href="vote_answer.html" id="download-button" class="btn-large waves-effect waves-light orange" style="width:100%">その他</a><br>
+        <a href="vote_answer.html" id="download-button" class="btn-large waves-effect waves-light orange" style="width:100%">その他</a><br> -->
       </div>
       <br><br>
 
@@ -114,12 +119,6 @@
       </div>
     </div>
   </footer> -->
-
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
 
   </body>
 </html>
