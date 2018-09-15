@@ -1,11 +1,13 @@
 <?php
 require_once("./config.php");
 
-$id = uniqid();
 $items = getParam($_GET["item"]);
 
 if ($items) {
-    $filename = "{$DATA_DIR}{$id}.{$DATA_TYPE}";
+    do {
+        $id = uniqid();
+        $filename = "{$DATA_DIR}{$id}.{$DATA_TYPE}";
+    } while (file_exists($filename));
     $data = [];
     foreach ($items as $key => $value) {
         $data[] = ["id" => $key, "name" => $value, "vote" => 0];
