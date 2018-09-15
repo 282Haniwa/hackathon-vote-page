@@ -1,6 +1,6 @@
 $(() => {
   const id = getQueryVariable('id')
-  
+   $('.section .container').append(`<a href="/vote.php?id=${id}" id="download-button" class="btn-large waves-effect waves-light orange" style="margin-bottom: 64px">戻る</a>`)
   if (!id) {
     document.write('ERROR!')
     return
@@ -17,7 +17,7 @@ $(() => {
       const data = $.parseJSON(result)
       $('#question').text(data.question)
       data.items.forEach(item => {
-        $('#button-container').append(`<a href="api/vote.php?voted=${item.id}" id="download-button" class="btn-large waves-effect waves-light orange" style="width:100%">${item.name} : ${item.vote}票</a><br><br>`)
+        $('#button-container').append(`<p id="download-button" class="btn-large orange" style="width:100%; cursor: auto">${item.name} : ${item.vote}票</a><br><br>`)
       })
     // Ajaxリクエストが失敗した時発動
     })
