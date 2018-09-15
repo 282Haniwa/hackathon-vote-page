@@ -6,9 +6,9 @@ if (id) {
     $filename = "{$DATA_DIR}{$id}.{$DATA_TYPE}";
     if (file_exists($filename)) {
         if (unlink($filename)){
-            echo $filename.'の削除に成功しました。';
+            echo $id.'の投票の削除に成功しました。';
           }else{
-            echo $filename.'の削除に失敗しました。';
+            echo $id.'の投票の削除に失敗しました。';
           }
     } else {
         echo("ERROR!<br>404 Not Found!");
@@ -30,5 +30,3 @@ function getParam($param)
     return null;
 }
 ?>
-
-<a href="/vote.php?voted=1">link</a>
