@@ -28,5 +28,3 @@ function getParam($param)
     return null;
 }
 ?>
-
-<a href="/api/vote.php?voted=1">link</a>
