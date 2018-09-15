@@ -19,7 +19,7 @@ $(() => {
     })
     .fail((result) => {
       console.log(result)
-      $('.content')
+      $('#question').append("ERROR!")
     })
     // Ajaxリクエストが成功・失敗どちらでも発動
     .always((result) => {
