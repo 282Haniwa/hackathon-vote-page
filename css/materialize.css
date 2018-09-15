@@ -3466,6 +3466,10 @@ table span.badge {
   padding-top: 0;
 }
 
+.notDisp {
+  display:none;
+}
+
 .row {
   margin-left: auto;
   margin-right: auto;
@@ -3477,12 +3481,15 @@ table span.badge {
   display: table;
   clear: both;
 }
+
+
 .row .left .graph {
-  position: relative; /* IE is dumb */
+  position:f relative; /* IE is dumb */
   width: 300px;
   border: 1px solid #207870;
   padding: 2px;
 }
+
 
 .row .left .graph .bar {
   display: block;
