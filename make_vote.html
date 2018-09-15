@@ -3,6 +3,8 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="js/make_vote.js"></script>
   <title>投票</title>
 
   <!-- CSS  -->
@@ -11,6 +13,18 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
+    <div id="displayArea">
+        <!--  ここに出力  -->
+    </div>
+     
+    <button id="addButton">Add</button>
+     
+    <div id="templateForm" class="NotDisp">
+      <input type="text" name="templateTextbox">
+      <button name="testButton">TEST</button>
+      <span class="dispInfo"></span>
+      <button name="removeButton">REMOVE</button>
+    </div>
   <nav class="deep-orange" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">投票作成ページ</a>
       <ul class="right hide-on-med-and-down">
@@ -31,20 +45,19 @@
 
         <p><input type="text" name="name"></p>
         
-        <!-- <p><input type="submit" value="送信する"></p> -->
         
+      
+        
+      
+              
         </form>
+       
 
 
-      <div class="row left">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">ボタン</a><br><br>
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">ボタン</a><br><br>
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">ボタン</a><br><br>
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">ボタン</a><br><br><br>
-
-        <a href="do_vote.html" class="btn-large waves-effect waves-light red">作成</a>
-      </div>
-      <br><br>
+      
+  
+          
+           
       
 
     </div>
