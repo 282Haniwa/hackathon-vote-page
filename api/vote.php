@@ -17,8 +17,9 @@ if (id) {
     $data["items"][$voted_data_index]["vote"] = intval($data["items"][$voted_data_index]["vote"]) + 1;
     $json = json_encode($data);
     $result = file_put_contents($filename, $json);
-    if ($result) {
-        # 結果ページへリダイレクト
+    if (!!$result) {
+        header("Location: /result.php?id={$id}");
+        exit();
     } else {
         echo("ERROR!");
     }

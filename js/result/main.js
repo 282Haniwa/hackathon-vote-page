@@ -1,6 +1,10 @@
 $(() => {
   const id = getQueryVariable('id')
   
+  if (!id) {
+    document.write('ERROR!')
+    return
+  }
   // オートコンプリート用キーワードの取得と設定
   $.ajax({
     url: `/api/data.php?id=${id}`,
@@ -13,7 +17,7 @@ $(() => {
       const data = $.parseJSON(result)
       $('#question').text(data.question)
       data.items.forEach(item => {
-        $('#button-container').append(`<a href="api/vote.php?voted=${item.id}" id="download-button" class="btn-large waves-effect waves-light orange" style="width:100%">${item.name}</a><br><br>`)
+        $('#button-container').append(`<a href="api/vote.php?voted=${item.id}" id="download-button" class="btn-large waves-effect waves-light orange" style="width:100%">${item.name} : ${item.vote}票</a><br><br>`)
       })
     // Ajaxリクエストが失敗した時発動
     })

@@ -9,6 +9,12 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/result/main.js"></script>
 </head>
 <body>
   <nav class="deep-orange" role="navigation">
@@ -26,18 +32,18 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <h1 class="header center orange-text">好きな動物は？</h1>
+      <h2 id="question" class="header center orange-text"></h1>
       <div class="row center">
         <h5 class="header col s12 light"></h5>
       </div>
-      <div class="row left">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">犬</a>
+      <div id="button-container" class="row left"  style="width:100%">
+        <!-- <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">犬</a>
         <div class="graph">
           <span class="bar" style="width: 36%;">36%</span>
         </div><br><br>
         <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">猫</a><br><br>
         <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">鳥</a><br><br>
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">その他</a><br>
+        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">その他</a><br> -->
       </div>
       <br><br>
 
@@ -117,12 +123,6 @@
       </div>
     </div>
   </footer> -->
-
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
 
   </body>
 </html>
