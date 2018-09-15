@@ -12,9 +12,9 @@ if (id) {
         exit();
     }
     $json = file_get_contents($filename);
-    $data = json_decode($json);
-    $voted_data_index = array_search($voted, array_column($data, "id"));
-    $data[$voted_data_index]->vote = intval($data[$voted_data_index]->vote) + 1;
+    $data = json_decode($json, true);
+    $voted_data_index = array_search($voted, array_column($data["items"], "id"));
+    $data["items"][$voted_data_index]["vote"] = intval($data[$voted_data_index]["vote"]) + 1;
     $json = json_encode($data);
     $result = file_put_contents($filename, $json);
     if ($result) {

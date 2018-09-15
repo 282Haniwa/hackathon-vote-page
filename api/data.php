@@ -16,9 +16,7 @@ if (id) {
     exit();
 }
 
-echo("<pre>");
-var_dump($data);
-echo("</pre>");
+echo($json);
 
 function getParam($param)
 {
@@ -31,4 +29,4 @@ function getParam($param)
 }
 ?>
 
-<a href="/vote.php?voted=1">link</a>
+<a href="/api/vote.php?voted=1">link</a>
